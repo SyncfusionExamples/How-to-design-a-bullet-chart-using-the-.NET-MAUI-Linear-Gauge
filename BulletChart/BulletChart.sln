@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulletChartKB", "BulletChartKB\BulletChartKB.csproj", "{2B8BE08E-70C0-4F86-A998-4A7059D7ECA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulletChart", "BulletChart\BulletChart.csproj", "{2B8BE08E-70C0-4F86-A998-4A7059D7ECA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
