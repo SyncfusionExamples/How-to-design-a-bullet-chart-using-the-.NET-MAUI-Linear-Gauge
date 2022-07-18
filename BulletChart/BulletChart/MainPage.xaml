@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
+             x:Class="BulletChart.MainPage">
+
+    <gauge:SfLinearGauge Maximum="10"
+                         Interval="2"
+                         VerticalOptions="Center"
+                         Margin="120,0,0,0"
+                         MinorTicksPerInterval="3"
+                         WidthRequest="350">
+        <gauge:SfLinearGauge.LineStyle>
+            <gauge:LinearLineStyle Thickness="30" />
+        </gauge:SfLinearGauge.LineStyle>
+        <gauge:SfLinearGauge.MajorTickStyle>
+            <gauge:LinearTickStyle Length="15" />
+        </gauge:SfLinearGauge.MajorTickStyle>
+        <gauge:SfLinearGauge.MinorTickStyle>
+            <gauge:LinearTickStyle Length="10" />
+        </gauge:SfLinearGauge.MinorTickStyle>
+
+        <gauge:SfLinearGauge.Ranges>
+            <gauge:LinearRange EndValue="4"
+                               Fill="Red"
+                               Position="Cross"
+                               StartWidth="30"
+                               EndWidth="30" />
+            <gauge:LinearRange StartValue="4"
+                               Fill="yellow"
+                               EndValue="8"
+                               Position="Cross"
+                               StartWidth="30"
+                               EndWidth="30" />
+            <gauge:LinearRange StartValue="8"
+                               Fill="green"
+                               EndValue="10"
+                               Position="Cross"
+                               StartWidth="30"
+                               EndWidth="30" />
+        </gauge:SfLinearGauge.Ranges>
+
+        <gauge:SfLinearGauge.BarPointers>
+            <gauge:BarPointer Value="5"
+                              PointerSize="12"
+                              Fill="black" />
+        </gauge:SfLinearGauge.BarPointers>
+
+        <gauge:SfLinearGauge.MarkerPointers>
+            <gauge:LinearShapePointer Value="7"
+                                      ShapeType="Rectangle"
+                                      ShapeHeight="20"
+                                      ShapeWidth="5"
+                                      Fill="black"
+                                      Position="Cross" />
+
+            <gauge:LinearContentPointer Value="0"
+                                        OffsetX="-10"
+                                        OffsetY="35"
+                                        Alignment="Start">
+                <gauge:LinearContentPointer.Content>
+                    <VerticalStackLayout Margin="0,0,10,0">
+                        <Label Text="Revenue YTD"
+                               HorizontalOptions="Center" />
+                        <Label Text="$ in Thousands" />
+                    </VerticalStackLayout>
+                </gauge:LinearContentPointer.Content>
+            </gauge:LinearContentPointer>
+        </gauge:SfLinearGauge.MarkerPointers>
+    </gauge:SfLinearGauge>
+</ContentPage>
