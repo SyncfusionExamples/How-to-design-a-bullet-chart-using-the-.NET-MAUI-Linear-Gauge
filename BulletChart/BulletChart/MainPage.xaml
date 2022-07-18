@@ -7,15 +7,18 @@
     <gauge:SfLinearGauge Maximum="10"
                          Interval="2"
                          VerticalOptions="Center"
-                         Margin="120,0,0,0"
+                         HorizontalOptions="Center"
                          MinorTicksPerInterval="3"
                          WidthRequest="350">
+        
         <gauge:SfLinearGauge.LineStyle>
             <gauge:LinearLineStyle Thickness="30" />
         </gauge:SfLinearGauge.LineStyle>
+        
         <gauge:SfLinearGauge.MajorTickStyle>
             <gauge:LinearTickStyle Length="15" />
         </gauge:SfLinearGauge.MajorTickStyle>
+        
         <gauge:SfLinearGauge.MinorTickStyle>
             <gauge:LinearTickStyle Length="10" />
         </gauge:SfLinearGauge.MinorTickStyle>
@@ -54,10 +57,10 @@
                                       Fill="black"
                                       Position="Cross" />
 
-            <gauge:LinearContentPointer Value="0"
-                                        OffsetX="-10"
-                                        OffsetY="35"
-                                        Alignment="Start">
+            <gauge:LinearContentPointer Value="{OnPlatform  Android=5, iOS=5, Default=0}"
+                                        OffsetX="{OnPlatform Android=10, iOS=10, Default=-10}"
+                                        OffsetY="{OnPlatform Android=-20, iOS=-20, Default=35}"
+                                        Alignment="{OnPlatform Android=Center, iOS=Center, Default=Start}">
                 <gauge:LinearContentPointer.Content>
                     <VerticalStackLayout Margin="0,0,10,0">
                         <Label Text="Revenue YTD"
