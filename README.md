@@ -1,6 +1,6 @@
 # How to design a bullet chart using the .NET MAUI Linear Gauge
 
-This repository contains sample for how to design a bullet chart using the [Syncfusion .NET MAUI Linear Gauge](https://help.syncfusion.com/maui/linear-gauge/getting-started) control.
+This repository contains sample to design a bullet chart using the [Syncfusion .NET MAUI Linear Gauge](https://help.syncfusion.com/maui/linear-gauge/getting-started) control.
 
 Please refer the KB through this [link](https://www.syncfusion.com/kb/13560/how-to-design-a-bullet-chart-using-the-net-maui-linear-gauge-sflineargauge).
 
